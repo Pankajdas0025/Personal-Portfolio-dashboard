@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <rect width="400" height="400" fill="#181920"/>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6c63ff"/>
+      <stop offset="50%" style="stop-color:#ff6b9d"/>
+      <stop offset="100%" style="stop-color:#00d4aa"/>
+    </linearGradient>
+    <clipPath id="circle">
+      <circle cx="200" cy="200" r="200"/>
+    </clipPath>
+  </defs>
+  <!-- Background gradient blob -->
+  <ellipse cx="200" cy="380" rx="130" ry="110" fill="url(#grad)" opacity="0.15"/>
+  <ellipse cx="200" cy="170" rx="90" ry="90" fill="url(#grad)" opacity="0.08"/>
+  <!-- Body silhouette -->
+  <ellipse cx="200" cy="310" rx="110" ry="70" fill="#6c63ff" opacity="0.18"/>
+  <rect x="130" y="240" width="140" height="120" rx="20" fill="#6c63ff" opacity="0.18"/>
+  <!-- Head silhouette -->
+  <circle cx="200" cy="165" r="70" fill="#6c63ff" opacity="0.25"/>
+  <!-- Initials -->
+  <text x="200" y="185" font-family="'Syne', sans-serif" font-size="52" font-weight="800"
+        fill="url(#grad)" text-anchor="middle" dominant-baseline="middle" opacity="0.85">AR</text>
+  <!-- Ring decoration -->
+  <circle cx="200" cy="200" r="195" stroke="url(#grad)" stroke-width="2" opacity="0.15" fill="none" stroke-dasharray="20 10"/>
+</svg>

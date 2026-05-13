@@ -1,0 +1,12 @@
+*.temp
+*.log
+*.sql/
+
+PHPMailer/
+database.sql
+.htaccess
+uploads/
+admin/
+config/
+
+
