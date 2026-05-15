@@ -10,8 +10,8 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="<?= sanitize($admin['name'] ?? 'Developer') ?> - <?= sanitize($admin['title'] ?? 'Full Stack Developer') ?> Portfolio" />
-  <title><?= sanitize($admin['name'] ?? 'Portfolio') ?> | <?= sanitize($admin['title'] ?? 'Full Stack Developer') ?></title>
+  <meta name="description" content="<?= sanitize($admin['username'] ?? 'Developer') ?> - <?= sanitize($admin['title'] ?? 'Full Stack Developer') ?> Portfolio" />
+  <title><?= sanitize($admin['username'] ?? 'Portfolio') ?> | <?= sanitize($admin['title'] ?? 'Full Stack Developer') ?></title>
 
   <!-- Bootstrap 5 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
@@ -40,7 +40,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
 <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand" href="<?= SITE_URL ?>">
-      <span class="brand-bracket">&lt;</span><?= sanitize($admin['name'] ?? 'Portfolio') ?><span class="brand-bracket">/&gt;</span>
+      <span class="brand-bracket">&lt;</span><?= sanitize($admin['username'] ?? 'Portfolio') ?><span class="brand-bracket">/&gt;</span>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <span><i class="fas fa-bars"></i></span>

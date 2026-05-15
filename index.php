@@ -28,7 +28,7 @@ foreach ($skills as $s) {
     <div class="row align-items-center gy-5">
       <div class="col-lg-6" data-aos="fade-right">
         <span class="hero-tag"><i class="fas fa-terminal me-2"></i>Available for hire</span>
-        <h1 class="hero-name"><?= sanitize($admin['name'] ?? 'Alex Johnson') ?></h1>
+        <h1 class="hero-name"><?= sanitize($admin['username'] ?? 'Pankaj Kumar Das') ?></h1>
         <div class="hero-typed">
           <span id="heroTyped"></span>
         </div>
@@ -64,7 +64,7 @@ foreach ($skills as $s) {
         <div class="hero-image-wrap">
           <div class="hero-img-ring">
             <?php if(!empty($admin['profile_image']) && file_exists(UPLOAD_PATH . $admin['profile_image'])): ?>
-            <img src="<?= UPLOAD_URL . sanitize($admin['profile_image']) ?>" alt="<?= sanitize($admin['name']) ?>" class="hero-img" />
+            <img src="<?= UPLOAD_URL . sanitize($admin['profile_image']) ?>" alt="<?= sanitize($admin['username']) ?>" class="hero-img" />
             <?php else: ?>
             <div class="hero-img d-flex align-items-center justify-content-center" style="background:var(--bg-secondary);">
               <i class="fas fa-user" style="font-size:5rem;color:var(--accent);opacity:.4;"></i>
@@ -76,6 +76,12 @@ foreach ($skills as $s) {
           </div>
           <div class="hero-badge hero-badge-2">
             <i class="fas fa-star"></i> Open to Work
+          </div>
+          <div class="hero-badge hero-badge-3">
+            <i class="fas fa-star"></i> FreeLancer
+          </div>
+          <div class="hero-badge hero-badge-4">
+            <i class="fas fa-star"></i> Clients
           </div>
         </div>
       </div>

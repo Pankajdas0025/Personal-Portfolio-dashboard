@@ -11,7 +11,7 @@
   --bg-secondary: #111118;
   --bg-card: rgba(255,255,255,0.04);
   --bg-glass: rgba(255,255,255,0.06);
-  --accent: #00f5c4;
+  --accent: #35d1dc;
   --accent-2: #7c5cfc;
   --accent-3: #ff6b6b;
   --text-primary: #f0f0f0;
@@ -26,7 +26,7 @@
   --font-display: "Poppins", sans-serif;
   --font-mono: "Poppins", sans-serif;
   --font-body: "Poppins", sans-serif;
-  --nav-h: 70px;
+  --nav-h: 100px;
   --transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
 }
 
@@ -106,7 +106,8 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-display); line-height: 1.2; }
 
 .nav-link {
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
   color: var(--text-secondary) !important;
   padding: 6px 12px !important;
   border-radius: 6px;
@@ -200,7 +201,7 @@ section { padding: 100px 0; }
 }
 
 .hero-name {
-  font-size: clamp(2.8rem, 6vw, 5.5rem);
+  font-size: clamp(2.8rem, 4vw, 4.5rem);
   font-weight: 800;
   line-height: 1.05;
   margin-bottom: 16px;
@@ -332,6 +333,9 @@ section { padding: 100px 0; }
 }
 .hero-badge-1 { top: 20%; right: -20px; }
 .hero-badge-2 { bottom: 20%; left: -20px; }
+.hero-badge-3{ top:-10%; left:40%; }
+.hero-badge-4{ bottom: 10%; right:15%; }
+
 .hero-badge i { color: var(--accent); margin-right: 6px; }
 
 /* ---- Glass Card ---- */
@@ -425,7 +429,7 @@ section { padding: 100px 0; }
 
 .project-img-wrap {
   position: relative;
-  height: 200px;
+  height: 280px;
   overflow: hidden;
   background: linear-gradient(135deg, rgba(0,245,196,0.1), rgba(124,92,252,0.1));
   display: flex; align-items: center; justify-content: center;

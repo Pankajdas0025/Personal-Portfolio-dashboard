@@ -29,16 +29,23 @@ $admin = getAdmin();
           <a href="<?= sanitize($admin['github_url']) ?>" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
           <?php endif; ?>
           <?php if(!empty($admin['linkedin_url'])): ?>
-          <a href="<?= sanitize($admin['linkedin_url']) ?>" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+          <a href="<?= sanitize($admin['linkedin_url']) ?>" target="_blank" rel="noopener" style="color: #0077B5;"><i class="fab fa-linkedin"></i></a>
           <?php endif; ?>
           <?php if(!empty($admin['twitter_url'])): ?>
-          <a href="<?= sanitize($admin['twitter_url']) ?>" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+          <a href="<?= sanitize($admin['twitter_url']) ?>" target="_blank" rel="noopener" style="color: #1DA1F2;"><i class="fab fa-twitter"></i></a>
+          <?php endif; ?>
+          <?php if(!empty($admin['instagram_url'])): ?>
+          <a href="<?= sanitize($admin['instagram_url']) ?>" target="_blank" rel="noopener" style="color: #E1306C;"><i class="fab fa-instagram"></i></a>
           <?php endif; ?>
         </div>
       </div>
     </div>
     <hr class="footer-hr" />
-    <p class="footer-copy">&copy; <?= date('Y') ?> <?= sanitize($admin['name'] ?? 'Portfolio') ?>. Crafted with <i class="fas fa-heart text-danger"></i> &amp; lots of coffee.</p>
+    <p class="footer-copy">&copy; <?= date('Y') ?> <?= sanitize($admin['name'] ?? 'Portfolio') ?>. Crafted with <i class="fas fa-heart text-danger"></i>
+    <?php if(!empty($admin['instagram_url'])): ?>
+          <a href="<?= sanitize($admin['instagram_url']) ?>" target="_blank" rel="noopener">campusxchange services.</a>
+    <?php endif; ?>
+    </p>
   </div>
 </footer>
 

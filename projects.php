@@ -39,7 +39,7 @@ $categories = array_unique(array_column($projects, 'category'));
         <div class="project-card">
           <div class="project-img-wrap">
             <?php if(!empty($p['image']) && file_exists(UPLOAD_PATH . $p['image'])): ?>
-            <img data-src="<?= UPLOAD_URL . sanitize($p['image']) ?>" src="" alt="<?= sanitize($p['title']) ?>" />
+            <img data-src="<?= UPLOAD_URL . sanitize($p['image']) ?>" src="" alt="<?= sanitize($p['title']) ?>" class="project-img h-250" />
             <?php else: ?>
             <div class="project-placeholder"><i class="fas fa-laptop-code"></i></div>
             <?php endif; ?>

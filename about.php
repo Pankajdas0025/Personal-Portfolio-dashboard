@@ -35,15 +35,15 @@ $skills = getSkills();
         <div class="mt-4">
           <h3 style="font-family:var(--font-display)"><?= sanitize($admin['name'] ?? '') ?></h3>
           <p style="color:var(--accent);font-family:var(--font-mono);font-size:.85rem"><?= sanitize($admin['title'] ?? '') ?></p>
-          <?php if(!empty($admin['location'])): ?>
-          <p style="color:var(--text-muted);font-size:.85rem"><i class="fas fa-map-marker-alt me-1"></i><?= sanitize($admin['location']) ?></p>
-          <?php endif; ?>
           <div class="d-flex gap-2 justify-content-center mt-3">
             <?php if(!empty($admin['github_url'])): ?>
             <a href="<?= sanitize($admin['github_url']) ?>" target="_blank" class="btn-outline-custom" style="padding:8px 16px;font-size:.75rem;"><i class="fab fa-github me-1"></i>GitHub</a>
             <?php endif; ?>
             <?php if(!empty($admin['linkedin_url'])): ?>
             <a href="<?= sanitize($admin['linkedin_url']) ?>" target="_blank" class="btn-outline-custom" style="padding:8px 16px;font-size:.75rem;"><i class="fab fa-linkedin me-1"></i>LinkedIn</a>
+            <?php endif; ?>
+            <?php if(!empty($admin['instagram_url'])): ?>
+            <a href="<?= sanitize($admin['instagram_url']) ?>" target="_blank" class="btn-outline-custom" style="padding:8px 16px;font-size:.75rem;"><i class="fab fa-instagram me-1"></i>Instagram</a>
             <?php endif; ?>
           </div>
           <?php if(!empty($admin['resume_file'])): ?>
@@ -83,6 +83,14 @@ $skills = getSkills();
             <div style="padding:12px 16px;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;">
               <span style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-muted)">PHONE</span>
               <p style="color:var(--text-primary);margin:0"><?= sanitize($admin['phone']) ?></p>
+            </div>
+          </div>
+          <?php endif; ?>
+          <?php if(!empty($admin['instagram_url'])): ?>
+          <div class="col-sm-6">
+            <div style="padding:12px 16px;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;">
+              <span style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-muted)">Founder | CEO</span>
+              <p style="color:var(--text-primary);margin:0">CampusXchange Services</p>
             </div>
           </div>
           <?php endif; ?>

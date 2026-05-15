@@ -62,8 +62,9 @@ $(document).ready(function () {
       strings: [
         'Full Stack Developer',
         'PHP Expert',
-        'UI/UX Enthusiast',
+        'Freelancer',
         'Problem Solver',
+        'Founder of CampusXchange',
         'Open Source Contributor'
       ],
       typeSpeed: 60,
@@ -71,7 +72,7 @@ $(document).ready(function () {
       backDelay: 2000,
       loop: true,
       showCursor: true,
-      cursorChar: '_'
+      cursorChar: '.'
     });
   }
 
