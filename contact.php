@@ -147,11 +147,17 @@ $admin = getAdmin();
             <?php if(!empty($admin['github_url'])): ?>
             <a href="<?= sanitize($admin['github_url']) ?>" target="_blank" class="btn-outline-custom" style="padding:8px 16px;font-size:.8rem"><i class="fab fa-github me-1"></i>GitHub</a>
             <?php endif; ?>
+
             <?php if(!empty($admin['linkedin_url'])): ?>
             <a href="<?= sanitize($admin['linkedin_url']) ?>" target="_blank" class="btn-outline-custom" style="padding:8px 16px;font-size:.8rem"><i class="fab fa-linkedin me-1"></i>LinkedIn</a>
             <?php endif; ?>
+
             <?php if(!empty($admin['twitter_url'])): ?>
             <a href="<?= sanitize($admin['twitter_url']) ?>" target="_blank" class="btn-outline-custom" style="padding:8px 16px;font-size:.8rem"><i class="fab fa-twitter me-1"></i>Twitter</a>
+            <?php endif; ?>
+
+             <?php if(!empty($admin['instagram_url'])): ?>
+            <a href="<?= sanitize($admin['instagram_url']) ?>" target="_blank" class="btn-outline-custom" style="padding:8px 16px;font-size:.8rem"><i class="fab fa-instagram me-1"></i>Instagram</a>
             <?php endif; ?>
           </div>
         </div>

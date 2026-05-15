@@ -15,6 +15,7 @@ $skillsByCategory = [];
 foreach ($skills as $s) {
     $skillsByCategory[$s['category']][] = $s;
 }
+
 ?>
 <?php require_once __DIR__ . '/includes/header.php'; ?>
 
@@ -34,10 +35,10 @@ foreach ($skills as $s) {
         </div>
         <p class="hero-desc"><?= sanitize($admin['tagline'] ?? 'Crafting elegant code, one commit at a time.') ?></p>
         <div class="hero-btns">
-          <a href="<?= SITE_URL ?>/projects.php" class="btn-primary-custom">
+          <a href="<?= SITE_URL ?>/projects" class="btn-primary-custom">
             <i class="fas fa-folder-open"></i> View Projects
           </a>
-          <a href="<?= SITE_URL ?>/contact.php" class="btn-outline-custom">
+          <a href="<?= SITE_URL ?>/contact" class="btn-outline-custom">
             <i class="fas fa-envelope"></i> Get In Touch
           </a>
         </div>
@@ -138,7 +139,7 @@ foreach ($skills as $s) {
         <h2 class="section-title">Featured Projects</h2>
         <div class="section-divider mb-0"></div>
       </div>
-      <a href="<?= SITE_URL ?>/projects.php" class="btn-outline-custom" style="height:fit-content;">
+      <a href="<?= SITE_URL ?>/projects" class="btn-outline-custom" style="height:fit-content;">
         View All <i class="fas fa-arrow-right ms-1"></i>
       </a>
     </div>
@@ -185,10 +186,12 @@ foreach ($skills as $s) {
     <span class="section-tag">Let's Talk</span>
     <h2 class="section-title">Have a project in mind?</h2>
     <p class="section-subtitle mx-auto mb-4">I'm always open to discussing new projects, creative ideas, or opportunities to be part of something great.</p>
-    <a href="<?= SITE_URL ?>/contact.php" class="btn-primary-custom">
+    <a href="<?= SITE_URL ?>/contact" class="btn-primary-custom">
       <i class="fas fa-paper-plane"></i> Start a Conversation
     </a>
   </div>
 </section>
 
-<?php require_once __DIR__ . '/includes/footer.php'; ?>
+
+<?php
+require_once __DIR__ . '/includes/footer.php'; ?>

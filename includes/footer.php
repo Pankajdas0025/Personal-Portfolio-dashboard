@@ -18,9 +18,9 @@ $admin = getAdmin();
       <div class="col-md-4 text-center">
         <div class="footer-links">
           <a href="<?= SITE_URL ?>">Home</a>
-          <a href="<?= SITE_URL ?>/about.php">About</a>
-          <a href="<?= SITE_URL ?>/projects.php">Projects</a>
-          <a href="<?= SITE_URL ?>/contact.php">Contact</a>
+          <a href="<?= SITE_URL ?>/about">About</a>
+          <a href="<?= SITE_URL ?>/projects">Projects</a>
+          <a href="<?= SITE_URL ?>/contact">Contact</a>
         </div>
       </div>
       <div class="col-md-4 text-md-end">

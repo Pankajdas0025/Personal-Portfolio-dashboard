@@ -11,7 +11,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="<?= sanitize($admin['username'] ?? 'Developer') ?> - <?= sanitize($admin['title'] ?? 'Full Stack Developer') ?> Portfolio" />
-  <title><?= sanitize($admin['username'] ?? 'Portfolio') ?> | <?= sanitize($admin['title'] ?? 'Full Stack Developer') ?></title>
+  <title><?= sanitize($admin['name'] ?? 'Portfolio') ?> | <?= sanitize($admin['title'] ?? 'Full Stack Developer') ?></title>
 
   <!-- Bootstrap 5 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
@@ -48,11 +48,11 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto align-items-center gap-1">
         <li class="nav-item"><a class="nav-link <?= $currentPage==='index'?'active':'' ?>" href="<?= SITE_URL ?>">Home</a></li>
-        <li class="nav-item"><a class="nav-link <?= $currentPage==='about'?'active':'' ?>" href="<?= SITE_URL ?>/about.php">About</a></li>
-        <li class="nav-item"><a class="nav-link <?= $currentPage==='education'?'active':'' ?>" href="<?= SITE_URL ?>/education.php">Education</a></li>
-        <li class="nav-item"><a class="nav-link <?= $currentPage==='experience'?'active':'' ?>" href="<?= SITE_URL ?>/experience.php">Experience</a></li>
-        <li class="nav-item"><a class="nav-link <?= $currentPage==='projects'?'active':'' ?>" href="<?= SITE_URL ?>/projects.php">Projects</a></li>
-        <li class="nav-item"><a class="nav-link <?= $currentPage==='contact'?'active':'' ?>" href="<?= SITE_URL ?>/contact.php">Contact</a></li>
+        <li class="nav-item"><a class="nav-link <?= $currentPage==='about'?'active':'' ?>" href="<?= SITE_URL ?>/about">About</a></li>
+        <li class="nav-item"><a class="nav-link <?= $currentPage==='education'?'active':'' ?>" href="<?= SITE_URL ?>/education">Education</a></li>
+        <li class="nav-item"><a class="nav-link <?= $currentPage==='experience'?'active':'' ?>" href="<?= SITE_URL ?>/experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link <?= $currentPage==='projects'?'active':'' ?>" href="<?= SITE_URL ?>/projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link <?= $currentPage==='contact'?'active':'' ?>" href="<?= SITE_URL ?>/contact">Contact</a></li>
         <li class="nav-item">
           <button id="themeToggle" class="btn btn-sm theme-btn" title="Toggle Theme">
             <i class="fas fa-sun"></i>

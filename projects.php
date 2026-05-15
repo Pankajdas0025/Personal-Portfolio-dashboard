@@ -76,3 +76,7 @@ $categories = array_unique(array_column($projects, 'category'));
 </section>
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
+
+
+<!-- I Build Fast, Scalable & Modern Web Applications
+Building Modern, Scalable & High-Performance Web Solutions -->
